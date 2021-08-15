@@ -1,4 +1,5 @@
 using DatingAPI.Data;
+using DatingAPI.Extensions;
 using DatingAPI.Interfaces;
 using DatingAPI.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -34,24 +35,11 @@ namespace DatingAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddScoped<ITokenService, TokenService>();
-            services.AddDbContext<DataContext>(options =>
-            {
-                options.UseSqlServer(_conf.GetConnectionString("DefaultConnection"));
-            });
+            services.AddApplicationServices(_conf);
             services.AddControllers();
             services.AddCors();
-            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-                .AddJwtBearer(options =>
-                {
-                    options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
-                    {
-                        ValidateIssuerSigningKey = true,
-                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_conf["TokenKey"])),
-                        ValidateIssuer = false,
-                        ValidateAudience = false,
-                    };
-                });
+            services.AddIdentityServices(_conf);
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "DatingAPI", Version = "v1" });
