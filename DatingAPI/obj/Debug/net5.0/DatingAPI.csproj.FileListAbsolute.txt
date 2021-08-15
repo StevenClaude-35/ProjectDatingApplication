@@ -22,7 +22,6 @@ D:\MyDatingProject\DatingAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.
 D:\MyDatingProject\DatingAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 D:\MyDatingProject\DatingAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
 D:\MyDatingProject\DatingAPI\bin\Debug\net5.0\Microsoft.OpenApi.dll
-D:\MyDatingProject\DatingAPI\bin\Debug\net5.0\Newtonsoft.Json.dll
 D:\MyDatingProject\DatingAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\MyDatingProject\DatingAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\MyDatingProject\DatingAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -59,3 +58,4 @@ D:\MyDatingProject\DatingAPI\obj\Debug\net5.0\DatingAPI.dll
 D:\MyDatingProject\DatingAPI\obj\Debug\net5.0\ref\DatingAPI.dll
 D:\MyDatingProject\DatingAPI\obj\Debug\net5.0\DatingAPI.pdb
 D:\MyDatingProject\DatingAPI\obj\Debug\net5.0\DatingAPI.genruntimeconfig.cache
+D:\MyDatingProject\DatingAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
