@@ -52,8 +52,8 @@ namespace DatingAPI.Controllers
         {
             var user = await _context.Users.SingleOrDefaultAsync(x => x.UserName == loginDto.Username);
 
-            if (user == null) return Unauthorized("Invalide username");
-            using var hmac = new HMACSHA512();
+            if (user == null) return Unauthorized("Invalid username");
+            using var hmac = new HMACSHA512(user.PasswordSalt);
             var computedHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(loginDto.Password));
             for (int i = 0; i < computedHash.Length; i++)
             {
