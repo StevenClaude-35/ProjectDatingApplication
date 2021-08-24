@@ -1,12 +1,9 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "cli": {
-    "analytics": "31e21282-3150-4d04-a74e-aab898fbf24a"
-  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "client": {
+    "DatingApplication": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -20,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/client",
+            "outputPath": "dist/DatingApplication",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -30,11 +27,6 @@
               "src/assets"
             ],
             "styles": [
-              "./node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
-              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "./node_modules/bootswatch/dist/united/bootstrap.min.css",
-              "./node_modules/font-awesome/css/font-awesome.css",
-              "./node_modules/ngx-toastr/toastr.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -76,10 +68,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "client:build:production"
+              "browserTarget": "DatingApplication:build:production"
             },
             "development": {
-              "browserTarget": "client:build:development"
+              "browserTarget": "DatingApplication:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -87,7 +79,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "client:build"
+            "browserTarget": "DatingApplication:build"
           }
         },
         "test": {
@@ -110,5 +102,5 @@
       }
     }
   },
-  "defaultProject": "client"
+  "defaultProject": "DatingApplication"
 }
