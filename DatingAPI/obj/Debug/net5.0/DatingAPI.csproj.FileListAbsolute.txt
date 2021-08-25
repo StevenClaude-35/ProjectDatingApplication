@@ -8,6 +8,7 @@ D:\MyDatingProject\DatingAPI\bin\Debug\net5.0\DatingAPI.dll
 D:\MyDatingProject\DatingAPI\bin\Debug\net5.0\ref\DatingAPI.dll
 D:\MyDatingProject\DatingAPI\bin\Debug\net5.0\DatingAPI.pdb
 D:\MyDatingProject\DatingAPI\bin\Debug\net5.0\Humanizer.dll
+D:\MyDatingProject\DatingAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\MyDatingProject\DatingAPI\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
 D:\MyDatingProject\DatingAPI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
 D:\MyDatingProject\DatingAPI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -58,4 +59,3 @@ D:\MyDatingProject\DatingAPI\obj\Debug\net5.0\DatingAPI.dll
 D:\MyDatingProject\DatingAPI\obj\Debug\net5.0\ref\DatingAPI.dll
 D:\MyDatingProject\DatingAPI\obj\Debug\net5.0\DatingAPI.pdb
 D:\MyDatingProject\DatingAPI\obj\Debug\net5.0\DatingAPI.genruntimeconfig.cache
-D:\MyDatingProject\DatingAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
